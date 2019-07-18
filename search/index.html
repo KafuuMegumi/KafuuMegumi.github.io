@@ -122,10 +122,26 @@
                 
                 
                 
-                <li class="">
-                    <a href="/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/CF/">CF</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/牛客多校/">牛客多校</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -140,10 +156,6 @@
                     </a>
                     <ul class="dropdown-menu">
                         
-                        
-                        <li>
-                            <a href="/tags/CF/">CF</a>
-                        </li>
                         
                         <li>
                             <a href="/tags/数学/">数学</a>
@@ -220,7 +232,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview4.jpg'
+        var defaultPreview = '/imgs/preview/preview2.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -430,6 +442,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/牛客多校第一场-B-Integration/">牛客多校第一场-B-Integration</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/CF-572-Count-Pairs/">CF 572 B Count Pairs</a>
                 </span>
             </li>
@@ -459,6 +477,12 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/CF-572-Count-Pairs/">CF 572 B Count Pairs</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/牛客多校第一场-B-Integration/">牛客多校第一场-B-Integration</a>
                 </span>
             </li>
             
@@ -497,9 +521,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/CF/" style="font-size: 10.34300740861297px;" class="tag-cloud-link">CF</a>
-    
-    <a href="/tags/数学/" style="font-size: 19.914931214493283px;" class="tag-cloud-link">数学</a>
+    <a href="/tags/数学/" style="font-size: 9.367869760165572px;" class="tag-cloud-link">数学</a>
     
 </div>
                 
